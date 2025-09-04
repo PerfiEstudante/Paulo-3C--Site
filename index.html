@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria O Grão Dourado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="accessibility-container">
+        <button id="accessibility-btn" class="accessibility-btn" aria-label="Menu de Acessibilidade" aria-expanded="false" aria-controls="accessibility-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.75 6a.75.75 0 0 0-.75.75v5.5a.75.75 0 0 0 1.5 0V9a.75.75 0 0 0-.75-.75Zm4.5 0a.75.75 0 0 0-.75.75v5.5a.75.75 0 0 0 1.5 0V9a.75.75 0 0 0-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        <div id="accessibility-menu" class="accessibility-menu hidden">
+            <button id="high-contrast-btn" aria-label="Ativar Alto Contraste">Alto Contraste</button>
+            <button id="font-size-btn" aria-label="Aumentar Tamanho da Fonte">Aumentar Fonte</button>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <h1>O Grão Dourado</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay">
+                <h2>Onde Cada Gole Conta uma História.</h2>
+                <p>Venha saborear a experiência de um café artesanal, feito com paixão.</p>
+                <a href="#menu" class="btn">Conheça Nosso Menu</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="section sobre-nos">
+            <div class="container">
+                <div class="conteudo-flex">
+                    <img src="https://i.pinimg.com/1200x/1c/bd/d7/1cbdd720a95d8aceadcc4cc4e714d842.jpg" alt="Pessoas sentadas em uma cafeteria aconchegante">
+                    <div class="texto">
+                        <h2>Nossa História</h2>
+                        <p>O Grão Dourado nasceu do sonho de dois amigos apaixonados por café. Nossa missão é oferecer mais do que uma bebida; queremos criar um ambiente acolhedor, onde a comunidade possa se reunir e compartilhar momentos especiais.</p>
+                        <p>Trabalhamos apenas com grãos de alta qualidade, selecionados de pequenas fazendas locais, para garantir um sabor incomparável em cada xícara.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu">
+            <div class="container">
+                <h2>Nosso Menu</h2>
+                <div class="menu-grid">
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/736x/6d/24/86/6d248608cdbcbf48d7d7663f0f19b5e6.jpg" alt="Expresso">
+                        <h3>Expresso Clássico</h3>
+                        <p>O autêntico sabor do café puro e concentrado, com uma crema perfeita.</p>
+                        <span class="preco">R$ 5,00</span>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/1200x/b1/87/d4/b187d4c8934d537408c7930474d88be3.jpg" alt="Cappuccino">
+                        <h3>Cappuccino Cremoso</h3>
+                        <p>A combinação perfeita de expresso, leite vaporizado e uma generosa camada de espuma de leite.</p>
+                        <span class="preco">R$ 8,50</span>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/1200x/fb/5a/7b/fb5a7b4a04fe90e7ad03b98c79d6e836.jpg" alt="Croissant">
+                        <h3>Croissant de Amêndoas</h3>
+                        <p>Delicado e crocante, recheado com uma pasta de amêndoas e coberto com açúcar de confeiteiro.</p>
+                        <span class="preco">R$ 9,00</span>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/736x/85/ff/66/85ff667a97ce1302a0056e34eba26ac1.jpg" alt="Bolo de Cenoura">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Fofinho, com especiarias e uma irresistível cobertura de chocolate.</p>
+                        <span class="preco">R$ 12,00</span>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/736x/2d/8c/8e/2d8c8e9d13215b8fc4a684deff2b4f21.jpg" alt="Latte">
+                        <h3>Latte</h3>
+                        <p>Suave e aveludado, com uma arte de latte desenhada à mão.</p>
+                        <span class="preco">R$ 9,00</span>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="https://i.pinimg.com/736x/a9/72/b7/a972b7b2cbf81c637a9288bcd9535dc0.jpg" alt="Torta de Limão">
+                        <h3>Torta de Limão</h3>
+                        <p>Doce na medida certa, com um recheio leve e um merengue suavemente tostado.</p>
+                        <span class="preco">R$ 15,00</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="section depoimentos">
+            <div class="container">
+                <h2>O que dizem sobre nós</h2>
+                <div class="depoimento-card">
+                    <p>"O melhor café da cidade! O ambiente é super aconchegante e o atendimento é impecável. Recomendo o cappuccino!"</p>
+                    <cite>- Maria Eduarda S.</cite>
+                </div>
+                <div class="depoimento-card">
+                    <p>"Um lugar perfeito para relaxar. A torta de limão é simplesmente divina e combina perfeitamente com o café coado."</p>
+                    <cite>- João P.</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section contato">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <div class="contato-info">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 08:00 - 19:00</p>
+                    <p>Sábado: 09:00 - 18:00</p>
+                    <p>Domingo: Fechado</p>
+                    <br>
+                    <h3>Nossa Localização</h3>
+                    <p>Endereço: Rua das Flores, 123 - Centro, São Paulo</p>
+                    <p>Telefone: (11) 98765-4321</p>
+                    <p>E-mail: contato@ograodourado.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 O Grão Dourado. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
